@@ -1,0 +1,169 @@
+{
+    "action": "",
+    "method": "post",
+    "html": [{
+            "type": "div",
+            "class": "row uniform 50%",
+            "html": [{
+                    "type": "div",
+                    "class": "6u 12u$(xsmall)",
+                    "html": {
+                        "type": "text",
+                        "name": "nombre",
+                        "id": "nombre",
+                        "caption": "Nombre",
+                        "placeholder": "Nombre",
+                        "validate": {
+                            "required": true,
+                            "maxlength": "20",
+                            "messages": {
+                                "required": "Nombre es obligatorio",
+                                "maxlength": "Por favor no ingrese mas de {0} caracteres."
+                            }
+                        }
+                    }
+                }, {
+                    "type": "div",
+                    "class": "6u 12u$(xsmall)",
+                    "html": {
+                        "type": "text",
+                        "name": "apellido",
+                        "id": "apellido",
+                        "caption": "Apellido",
+                        "placeholder": "Apellido",
+                        "validate": {
+                            "required": true,
+                            "maxlength": "20",
+                            "messages": {
+                                "required": "Apellido es obligatorio",
+                                "maxlength": "Por favor no ingrese mas de {0} caracteres."
+                            }
+                        }
+                    }
+                }, {
+                    "type": "div",
+                    "class": "6u 12u$(xsmall)",
+                    "html": {
+                        "type": "email",
+                        "name": "email",
+                        "id": "email",
+                        "caption": "Email",
+                        "placeholder": "Email",
+                        "validate": {
+                            "required": true,
+                            "maxlength": "25",
+                            "messages": {
+                                "required": "Email es obligatorio",
+                                "maxlength": "Por favor no ingrese mas de {0} caracteres.",
+                                "email": "Por favor ingrese un email v\u00e1lido"
+                            }
+                        }
+                    }
+                }, {
+                    "type": "div",
+                    "class": "6u 12u$(xsmall)",
+                    "html": {
+                        "type": "text",
+                        "name": "fechaNacimiento",
+                        "id": "fechaNacimiento",
+                        "caption": "Fecha de Nacimiento",
+                        "placeholder": "Fecha de Nacimiento",
+                        "datepicker": {
+                            "minDate": "-100Y",
+                            "maxDate": "2015-05-29",
+                            "dateFormat": "yy-mm-dd",
+                            "autoSize": true,
+                            "defaultDate": null,
+                            "buttonImageOnly": true,
+                            "buttonText": "Fecha",
+                            "selectOtherMonths": true,
+                            "showAnim": "slide",
+                            "showButtonPanel": true,
+                            "showOtherMonths": true,
+                            "yearRange": "1910:2099",
+                            "changeMonth": true,
+                            "changeYear": true,
+                            "closeText": "Cerrar",
+                            "currentText": "Hoy",
+                            "dayNames": ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "S\u00e1bado"],
+                            "dayNamesMin": ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
+                            "monthNames": ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+                            "monthNamesShort": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
+                        }
+                    }
+                }, {
+                    "type": "div",
+                    "class": "6u 12u$(xsmall)",
+                    "html": {
+                        "type": "select",
+                        "name": "genero",
+                        "id": "genero",
+                        "caption": "G\u00e9nero",
+                        "options": {
+                            "": "--Seleccione uno--",
+                            "F": "Femenino",
+                            "M": "Masculino"
+                        },
+                        "validate": {
+                            "required": true,
+                            "maxlength": "10",
+                            "messages": {
+                                "required": "G\u00e9nero es obligatorio",
+                                "maxlength": "Por favor no ingrese mas de {0} caracteres."
+                            }
+                        }
+                    }
+                }, {
+                    "type": "div",
+                    "class": "6u 12u$(xsmall)",
+                    "html": {
+                        "type": "select",
+                        "name": "opciones",
+                        "id": "opciones",
+                        "caption": "Opciones",
+                        "options": {
+                            "": "--Seleccione uno--",
+                            "v1": "Valor 1",
+                            "v2": "Valor 2",
+                            "v3": "Valor 3"
+                        }
+                    }
+                }, {
+                    "type": "div",
+                    "class": "6u 12u$(xsmall)",
+                    "html": {
+                        "type": "number",
+                        "name": "cedula",
+                        "id": "cedula",
+                        "caption": "C\u00e9dula",
+                        "placeholder": "C\u00e9dula"
+                    }
+                }, {
+                    "type": "div",
+                    "class": "6u 12u$(xsmall)",
+                    "html": {
+                        "type": "radiobuttons",
+                        "name": "viaja",
+                        "id": "viaja",
+                        "caption": "\u00bfViaja frecuentemente?",
+                        "options": {
+                            "no": {
+                                "checked": "checked",
+                                "caption": "No"
+                            },
+                            "si": "Si"
+                        }
+                    }
+                }]
+        }, {
+            "type": "ul",
+            "class": "actions",
+            "html": {
+                "type": "li",
+                "html": {
+                    "type": "submit",
+                    "value": "Guardar"
+                }
+            }
+        }]
+}

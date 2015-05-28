@@ -1,0 +1,77 @@
+{
+    "action": "",
+    "method": "post",
+    "html": [{
+            "type": "p",
+            "html": "Mi formulario"
+        }, {
+            "type": "text",
+            "name": "nombre",
+            "id": "nombre",
+            "caption": "Nombre",
+            "placeholder": "Nombre",
+            "class": "required"
+        }, {
+            "type": "text",
+            "name": "apellido",
+            "id": "apellido",
+            "caption": "Apellido",
+            "placeholder": "Apellido",
+            "class": "required"
+        }, {
+            "type": "email",
+            "name": "email",
+            "id": "email",
+            "caption": "Email",
+            "placeholder": "Email",
+            "class": "required"
+        }, {
+            "type": "select",
+            "name": "genero",
+            "id": "genero",
+            "caption": "G\u00e9nero",
+            "options": {
+                "": "--Seleccione uno--",
+                "F": "Femenino",
+                "M": "Masculino"
+            },
+            "class": "required"
+        }, {
+            "type": "number",
+            "name": "telefono",
+            "id": "telefono",
+            "caption": "Tel\u00e9fono",
+            "placeholder": "Tel\u00e9fono"
+        }, {
+            "type": "text",
+            "name": "direccion",
+            "id": "direccion",
+            "caption": "Direcci\u00f3n",
+            "placeholder": "Direcci\u00f3n"
+        }, {
+            "type": "text",
+            "name": "fechaNacimiento",
+            "id": "fechaNacimiento",
+            "caption": "Fecha de nacimiento",
+            "datepicker": {
+                "minDate": "+1"
+            }
+        }, {
+            "type": "radiobuttons",
+            "name": "trabaja",
+            "id": "trabaja",
+            "caption": "\u00bfTrabaja?",
+            "options": ["No", "Si"],
+            "class": "required"
+        }, {
+            "type": "radiobuttons",
+            "name": "estudia",
+            "id": "estudia",
+            "caption": "\u00bfEstudia?",
+            "options": ["No", "Si"],
+            "class": "required"
+        }, {
+            "type": "submit",
+            "value": "Enviar"
+        }]
+}
